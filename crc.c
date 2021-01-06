@@ -2,12 +2,12 @@
 #include<string.h>
 #define N strlen(g)
 char t[28],cs[28],g[]="10001000000100001";
-inta,e,c;
-voidxor(){
+int a,e,c;
+void xor(){
 for(c = 1;c < N; c++)
 cs[c] = (( cs[c] == g[c])?'0':'1');
 }
-voidcrc(){
+void crc(){
 for(e=0;e<N;e++)
 cs[e]=t[e];
 do{
